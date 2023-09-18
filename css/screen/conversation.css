@@ -1,0 +1,229 @@
+/*
+body{
+    background-color: #ABC0D0;
+    height: 1000vh;
+}
+*/
+
+#chat-screen {
+  background-color: #abc0d0;
+  height: 1000vh;
+}
+
+#chat-screen .alt-header {
+  top: 10px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc0d0;
+  z-index: 1;
+}
+.status-bar--chat {
+  z-index: 5;
+  background-color: #abc0d0;
+}
+
+@keyframes fadeIn{
+  from{
+    transform : translateY(30px);
+    opacity: 0;
+  }
+  to{
+    transform: none;
+    opacity: 1;;
+  }
+}
+
+
+.main-chat {
+  margin-top: 150px;
+  animation: fadeIn 0.8s linear;
+}
+
+.conversation__date {
+  display: flex;
+  justify-content: center;
+}
+
+.conversation__date span {
+  background-color: #91a3b2;
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+}
+
+
+@keyframes chatMoveToRight{
+  from{
+    transform:translateX(-100px);
+    opacity: 0;
+  }
+  to{
+    transform : none;
+    opacity: 1;
+  }
+}
+
+.conversation-chats__column {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.conversation-chats__column:first-child{
+  animation:chatMoveToRight 0.8s linear;
+}
+
+.conversation-chats__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.conversation-chats__title {
+  font-size: 20px;
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.conversation-chats__message {
+  display: flex;
+  align-items: flex-end;
+}
+
+.conversation-chats__message--text {
+  padding: 15px 20px;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+}
+
+@keyframes chatMoveToLeft{
+  from{
+    transform:translateX(100px);
+    opacity: 0;
+  }
+  to{
+    transform : none;
+    opacity: 1;
+  }
+}
+
+.conversation-chats__column--reply {
+  justify-content: flex-end;
+  animation: chatMoveToLeft 0.8s linear;
+}
+
+.conversation-chats__column--reply .conversation-chats__message--text {
+  background-color: #fee501;
+  margin-left: 5px;
+  margin-right: 0px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+}
+
+.conversation-chats__column--reply .conversation-chats__message {
+  flex-direction: row-reverse;
+}
+
+.keyboard-section {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  bottom: 0px;
+  padding: 10px 25px;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.keyboard-section .keyboard-section__column:first-child {
+  width: 10%;
+}
+
+.keyboard-section .keyboard-section__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.keyboard-section input {
+  padding-left: 10px;
+  height: 30px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  transition:all 0.3s ease-in-out;
+}
+
+.keyboard-section__column:last-child > i,
+.keyboard-section__column:last-child button {
+  position: absolute;
+  top: 2px;
+  right: -10px;
+}
+
+.keyboard-section__column:last-child > i {
+  top: 16px;
+  right: 35px;
+}
+
+.keyboard-section__column button {
+  background-color: #fee501;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.keyboard-section__column button:focus,
+.keyboard-section__column button:active {
+  outline: none;
+}
+
+/*
+.keyboard-section input {
+    height: 50px;
+    box-sizing: border-box;
+    width:100%;
+    background-color: #F8F8F8;
+    border:2px solid rgba(0,0,0,0.5);
+    margin : 0px 50px;
+    padding : 0px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    position:relative
+}
+
+.keyboard-section__typing i{
+    position:absolute;
+}
+
+.keyboard-section__typing i:first-child{
+    right : 50px;
+}
+*/
+.keyboard-section .keyboard-section__column:first-child,
+.keyboard-section .fa-smile,
+.keyboard-section button{
+  transition:opacity 0.3s ease-in-out;
+}
+
+
+
+.keyboard-section:focus-within .keyboard-section__column:first-child,
+.keyboard-section:focus-within .fa-smile,
+.keyboard-section:focus-within button{
+  opacity: 0;
+}
+
+.keyboard-section:focus-within input{
+  width:95vw;
+  transform : translateX(-10%);
+}

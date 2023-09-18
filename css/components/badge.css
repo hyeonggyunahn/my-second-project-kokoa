@@ -1,0 +1,27 @@
+.badge{
+    background-color: tomato;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  /*
+    .badge__second{
+    background-color: tomato;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+  }
+
+  component를 만들었다면 하나만 사용해야지 badge__second는 왜 만듦?
+
+  */

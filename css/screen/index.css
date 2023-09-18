@@ -1,0 +1,91 @@
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px 0px;
+}
+
+.welcome-section__title {
+  font-size: 35px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.welcome-section__subtitle {
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  opacity: 0.4;
+  font-weight: 500;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 20px;
+}
+
+/*
+.login-form__email {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 25px 0px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.login-form__password {
+  border-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 25px 0px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  opacity: 0.5;
+}
+*/
+
+.login-form__email:focus,
+.login-form__password:focus {
+  outline: none;
+  border-color: var(--yellow);
+}
+
+.login-form__email,
+.login-form__password {
+  border-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 25px 0px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  opacity: 0.5;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.login-form__login-btn,
+.login-form__signup-btn {
+  border-style: none;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  background-color: #fae100;
+  border-radius: 5px;
+}
+
+.login-form__link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* 메모해놔야 하는 부분
+.login-form__btn:first-child {
+    margin-bottom: 18px;
+}
+
+반영되지 않는 점에 대해서 소개
+
+추론 하는 부분은, btn의 클래스명을 가진 태그의 순서가 아니라, 이 태그가 속한 부모의에서 첫번째 태그가 적용되는것 같다.
+따라서, 이런경우 btn 자체로 설정하는것이 아니라, class명을 하나 또 만들어 설정하는것이 더 편할듯 하다.
+*/

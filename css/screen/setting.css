@@ -1,0 +1,41 @@
+.setting-list{
+    margin-bottom:60px;
+    padding:0 30px;
+}
+
+.setting-column{
+    display: flex;
+    border-bottom:1px solid #00000033;
+    padding:30px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-column__left--icon{
+    margin-right:30px;
+    opacity:0.8;
+}
+
+.setting-column--last{
+    display: flex;
+    padding:30px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-column__left{
+    display: flex;
+    align-items: center;
+}
+
+
+.setting-column__left--title{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.setting-column__right--title{
+    font-size: 40px;
+    font-weight: 350;
+    color : #00000033;
+}

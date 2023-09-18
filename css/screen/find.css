@@ -1,0 +1,147 @@
+.screen-header__icons {
+  position: relative;
+}
+
+.dot__header {
+  position: absolute;
+  top: -9px;
+  right: -10px;
+}
+
+.find-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.find-btn__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-btn__section span {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.find-btn__title--width {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.recommended-section__title {
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+.recommended-section__text {
+  text-align: center;
+  padding: 130px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 25px;
+}
+
+.openchat {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+}
+
+.openchat-section__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.openchat-column__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.openchat-column__text--title {
+  font-size: 27px;
+  margin-bottom: 2px;
+}
+.openchat-column__text--sub {
+  font-size: 22px;
+  margin-bottom: 2px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.openchat-column__membersection {
+  display: flex;
+  align-items: center;
+}
+
+.openchat-column__membersection img {
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.openchat-membersection__text {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.openchat-membersection__text--color {
+  color: #ff96d6;
+  font-weight: 600;
+}
+
+.openchat-column__img {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.openchat-column__img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.openchat-column__img__number {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  padding: 5px 0;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+@keyframes heartBit{
+  0%{
+    color:white;
+    transform:none;
+  }
+  50%{
+    color:tomato;
+    transform:scale(1.3);
+  }
+  100%{
+    color:white;
+    transform: noen;
+  }
+}
+
+.openchat-column__img__number span:first-child:hover{
+  will-change: transform;
+  animation:heartBit 1s ease-in-out infinite;
+}

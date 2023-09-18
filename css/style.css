@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500&family=Open+Sans:wght@400;600&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/*components*/
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/navigation.css";
+@import "components/badge.css";
+@import "components/dot.css";
+@import "components/alt-header.css";
+@import "components/no-mobile.css";
+
+/*screens*/
+@import "screen/index.css";
+@import "screen/friends.css";
+@import "screen/chat.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/setting.css";
+@import "screen/conversation.css";
+
+body {
+  color: #2e363e;
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+a {
+  text-decoration: none;
+}
